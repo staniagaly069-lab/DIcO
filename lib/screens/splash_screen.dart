@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
               width: 120,
               height: 120,
               decoration: BoxDecoration(
-                color: cs.onPrimary.withOpacity(0.12),
+                color: cs.onPrimary.withValues(alpha: 0.12),
                 borderRadius: BorderRadius.circular(28),
               ),
               child: Icon(Icons.menu_book, size: 72, color: cs.onPrimary),
@@ -57,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),
             Text('Français ↔ Lingala',
-                style: TextStyle(color: cs.onPrimary.withOpacity(0.85))),
+                style: TextStyle(color: cs.onPrimary.withValues(alpha: 0.85))),
             const SizedBox(height: 36),
             SizedBox(
               width: 28,
@@ -67,13 +67,13 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const SizedBox(height: 16),
             Text(_status,
-                style: TextStyle(color: cs.onPrimary.withOpacity(0.85))),
+                style: TextStyle(color: cs.onPrimary.withValues(alpha: 0.85))),
             const Spacer(),
             Padding(
               padding: const EdgeInsets.only(bottom: 24),
               child: Text('© ${AppConstants.designer}',
                   style: TextStyle(
-                      color: cs.onPrimary.withOpacity(0.7), fontSize: 12)),
+                      color: cs.onPrimary.withValues(alpha: 0.7), fontSize: 12)),
             ),
           ],
         ),

@@ -63,19 +63,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
         ),
         RadioListTile<ThemeMode>(
           value: ThemeMode.system,
+          // ignore: deprecated_member_use
           groupValue: _mode,
+          // ignore: deprecated_member_use
           onChanged: (v) => _setMode(v!),
           title: const Text('Système'),
         ),
         RadioListTile<ThemeMode>(
           value: ThemeMode.light,
+          // ignore: deprecated_member_use
           groupValue: _mode,
+          // ignore: deprecated_member_use
           onChanged: (v) => _setMode(v!),
           title: const Text('Clair'),
         ),
         RadioListTile<ThemeMode>(
           value: ThemeMode.dark,
+          // ignore: deprecated_member_use
           groupValue: _mode,
+          // ignore: deprecated_member_use
           onChanged: (v) => _setMode(v!),
           title: const Text('Sombre'),
         ),
