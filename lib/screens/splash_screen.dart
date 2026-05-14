@@ -44,10 +44,18 @@ class _SplashScreenState extends State<SplashScreen> {
               width: 120,
               height: 120,
               decoration: BoxDecoration(
-                color: cs.onPrimary.withOpacity(0.12),
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(28),
               ),
-              child: Icon(Icons.menu_book, size: 72, color: cs.onPrimary),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(28),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, __, ___) =>
+                      Icon(Icons.menu_book, size: 72, color: cs.primary),
+                ),
+              ),
             ),
             const SizedBox(height: 24),
             Text(AppConstants.appName,

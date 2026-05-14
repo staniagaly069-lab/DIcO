@@ -23,3 +23,5 @@ flutter:
   assets:
     - assets/data/francais_lingala.json
     - assets/data/lingala_francais.json
+    - assets/images/logo.png
+    - assets/images/splash.png
