@@ -9,6 +9,10 @@ on:
 
 jobs:
   all_in_one:
+  workflow_dispatch:
+
+jobs:
+  ci:
     runs-on: ubuntu-latest
 
     steps:
