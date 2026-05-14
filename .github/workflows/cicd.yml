@@ -34,7 +34,7 @@ jobs:
       - name: Build apk
         run: |
           flutter pub get
-          flutter format --set-exit-if-changed .
+          dart format --set-exit-if-changed .
           flutter analyze
           flutter test
           flutter build apk --debug
