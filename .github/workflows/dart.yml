@@ -8,10 +8,6 @@ on:
     branches: ["master"]
 
 jobs:
-  all_in_one:
-  workflow_dispatch:
-
-jobs:
   ci:
     runs-on: ubuntu-latest
 
@@ -19,11 +15,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Java (required by Android build)
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: "17"
+          java-version: '17'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools platforms;android-33 build-tools;33.0.2'
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
@@ -36,6 +37,7 @@ jobs:
           flutter --version
           dart --version
           java -version
+          sdkmanager --version
 
       - name: Install dependencies
         run: flutter pub get
