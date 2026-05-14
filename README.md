@@ -41,3 +41,21 @@ Format :
 > Les images `assets/images/logo.png` et `assets/images/splash.png` ne sont pas
 > incluses : ajoutez les vôtres avant la compilation (ou supprimez les références
 > dans `splash_screen.dart`).
+
+
+## Installation Flutter + Android (Linux)
+
+Si tu pars de zéro, lance simplement :
+
+```bash
+bash scripts/setup_flutter_android.sh
+```
+
+Ensuite dans le projet :
+
+```bash
+flutter pub get
+flutter run
+```
+
+> Le script installe Flutter, Android SDK command line tools, platform-tools, build-tools et accepte les licences.
