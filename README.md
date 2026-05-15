@@ -43,6 +43,11 @@ Format :
 > dans `splash_screen.dart`).
 
 
+
+## Architecture et conformité compilation
+
+Pour aligner un autre projet sur cette base Flutter (architecture, SDK, versions Gradle/Kotlin/Android et plugins), consultez le guide dédié : [`GUIDE_ARCHITECTURE_COMPILATION.md`](GUIDE_ARCHITECTURE_COMPILATION.md).
+
 ## Installation Flutter + Android (Linux)
 
 Si tu pars de zéro, lance simplement :
